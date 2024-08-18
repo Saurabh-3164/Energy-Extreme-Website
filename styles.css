@@ -1,0 +1,427 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4; /* Light background for clean look */
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #003d33; /* Dark green for a professional, eco-friendly feel */
+    color: #fff;
+}
+
+.logo img {
+    max-width: 120px;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    transition: color 0.3s, border-bottom 0.3s;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+}
+
+.navigation ul li a:hover {
+    color: #f4c542; /* Sunburst yellow for hover effect */
+    border-bottom: 2px solid #f4c542;
+}
+
+.contact-details {
+    font-size: 14px;
+    text-align: right;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('pexels-pixabay-433308.jpg'); /* Replace with a solar-themed background image */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 80vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.hero-content p {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.cta-button {
+    background-color: #f4c542; /* Solar yellow */
+    color: #003d33;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e0b534;
+    transform: scale(1.05);
+}
+
+/* About Us Section */
+.about {
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.about h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #003d33; /* Dark green for a professional look */
+}
+
+.about p {
+    text-align: center;
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Services Section */
+.services {
+    padding: 60px 20px;
+    background-color: #e8f5e9; /* Light green background for a fresh look */
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #003d33; /* Main theme color */
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-card {
+    width: 300px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    padding: 20px;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #003d33; /* Main theme color */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    line-height: 1;
+}
+
+.icon.end-to-end::before {
+    content: "🌟"; /* Example icon for end-to-end */
+}
+
+.icon.permissions::before {
+    content: "📜"; /* Example icon for permissions */
+}
+
+.icon.infrastructure::before {
+    content: "🏗️"; /* Example icon for infrastructure */
+}
+
+.icon.expertise::before {
+    content: "🗺️"; /* Example icon for expertise */
+}
+
+.service-card h3 {
+    margin: 0;
+    font-size: 22px;
+    color: #003d33; /* Main theme color */
+    font-weight: bold;
+}
+
+.service-card p {
+    color: #555;
+    line-height: 1.6;
+}
+
+
+/* Products Section */
+.products {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+}
+
+.products h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #003d33;
+    margin-bottom: 40px;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: calc(25% - 40px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+.product-item img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.product-item h3 {
+    font-size: 20px;
+}
+
+/* Projects Section */
+.projects {
+    padding: 60px 20px;
+    background-color: #f0f4f8;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #003d33; /* Main theme color */
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-card {
+    width: 300px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-header {
+    background-color: #003d33; /* Header color matching the theme */
+    color: #fff;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.project-content {
+    padding: 20px;
+    text-align: left;
+}
+
+.project-content p {
+    color: #555;
+    line-height: 1.6;
+}
+
+
+/* Contact Section */
+.contact {
+    padding: 60px 20px;
+    background-color: #e0f2f1;
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #003d33;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #003d33; /* Dark green for a professional, eco-friendly feel */
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.footer-left p {
+    margin: 0;
+}
+
+.social-links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.social-links li {
+    margin: 0 10px;
+}
+
+.social-links li img {
+    max-width: 30px;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.newsletter-form input[type="email"] {
+    padding: 10px;
+    width: 250px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #ccc;
+}
+
+.newsletter-form button[type="submit"] {
+    padding: 10px;
+    background-color: #f4c542; /* Solar yellow */
+    border: none;
+    cursor: pointer;
+    color: #003d33;
+    border-radius: 0 5px 5px 0;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.newsletter-form button[type="submit"]:hover {
+    background-color: #e0b534;
+    transform: scale(1.05);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .navigation ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .service-grid, .product-grid, .project-grid {
+        flex-direction: column;
+    }
+
+    .service-item, .product-item, .project-item {
+        width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+    }
+
+    .services h2, .products h2, .projects h2 {
+        font-size: 28px;
+    }
+
+    .service-item h3, .product-item h3, .project-info h3 {
+        font-size: 20px;
+    }
+
+    .testimonial-item p {
+        font-size: 14px;
+    }
+
+    .footer-left p {
+        text-align: center;
+    }
+}
